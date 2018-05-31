@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.loveb.mapfirst.MainActivity"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+
+        android:orientation="horizontal"
+
+        android:layout_width="fill_parent"
+
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentBottom="true"
+
+        android:layout_alignParentLeft="true"
+
+        android:layout_alignParentStart="true">
+
+
+
+
+
+        <Button
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:text="Seattle"
+
+            android:id="@+id/btnSeattle"
+
+            android:layout_weight="1" />
+
+
+
+        <Button
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:text="Tokyo"
+
+            android:id="@+id/btnTokyo"
+
+            android:layout_weight="1" />
+
+
+
+        <Button
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:text="Dublin"
+
+            android:id="@+id/btnDublin"
+
+            android:layout_weight="1" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:text="Map"
+
+            android:id="@+id/btnMap"
+
+            android:layout_weight="1" />
+
+
+
+        <Button
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:text="Satellite"
+
+            android:id="@+id/btnSatellite"
+
+            android:layout_weight="1" />
+
+
+
+        <Button
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:text="Hybrid"
+
+            android:id="@+id/btnHybrid"
+
+            android:layout_weight="1" />
+
+    </LinearLayout>
+    <fragment
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.MapFragment"
+        map:cameraTargetLat="40.7484"
+        map:cameraTargetLng="-73.9857"
+        map:cameraTilt="65"
+        map:cameraZoom="17"
+        map:cameraBearing="112.5"
+        />
+
+</LinearLayout>
